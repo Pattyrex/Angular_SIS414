@@ -1,0 +1,388 @@
+
+<ng-content></ng-content>
+<section>
+    <div class="cab">
+        <p>Univ. Saavedra Marca Patricia Emilia</p>
+    </div>
+    <section>    
+        <pre>
+        <a href="../index.html">IR AL INDEX</a>
+        </pre>
+    </section>
+</section>
+
+<div class="contenedor-cards">
+
+    <div class="card" id="c0">
+        <header>
+            <h1>LAB 1</h1>
+            <i class="fa-brands fa-html5"></i>
+        </header>
+        <pre>let nom1 = "Maxwell Wright";
+            let nom2 = "Rajá Villarreal";
+            let nom3 = "Helen Richards";
+            let tel1 = "(0191) 719 6495";
+            let tel2 = "0866 398 2895";
+            let tel3 = "0800 1111";
+            let correo1 = "Curabitur.egestas.nunc@nonummyac.co.uk";
+            let correo2 = "posuere.vulputate@sed.com";
+            let correo3 = "libero@convallis.edu";
+            console.log(`${{nom1} / ${{tel1} / ${{correo1}`);
+            console.log(`${{nom3} / ${{tel3} / ${{correo3}`);
+        </pre>
+    </div>
+    <div class="card" id="c1">
+        <header>
+            <h1>LAB 2</h1>
+            <i class="fa-brands fa-js"></i>
+        </header>
+        
+        <pre>let contacts = [
+            {{
+            name: "Maxwell Wright",
+            phone: "(0191) 719 6495",
+            email: "Curabitur.egestas.nunc@nonummyac.co.uk"
+            }, {{
+            name: "Raja Villarreal",
+            phone: "0866 398 2895",
+            email: "posuere.vulputate@sed.com"
+            }, {{
+            name: "Helen Richards",
+            phone: "0800 1111",
+            email: "libero@convallis.edu"
+            }, {{
+            name: "Maisie Haley",
+            phone: "0913 531 3030",
+            email: "risus.Quisque@urna.ca"
+            }
+        ];
+        console.log(`${{contacts[0].name} / ${{contacts[0].phone} / ${{contacts[0].email}`);
+        console.log(`${{contacts[(contacts.length)-1].name} / ${{contacts[(contacts.length)-1].phone} / ${{contacts[(contacts.length)-1].email}`);
+       </pre>
+    </div>
+    <div class="card" id="c2">
+        <header>
+            <h1>LAB 3</h1>
+            <i class="fa-brands fa-js"></i>
+        </header>
+        <pre>let contacts = [
+            {{
+            name: "Maxwell Wright",
+            phone: "(0191) 719 6495",
+            email: "Curabitur.egestas.nunc@nonummyac.co.uk"
+            }, {{
+            name: "Raja Villarreal",
+            phone: "0866 398 2895",
+            email: "posuere.vulputate@sed.com"
+            }, {{
+            name: "Helen Richards",
+            phone: "0800 1111",
+            email: "libero@convallis.edu"
+            }
+        ];
+        
+            let NewContact = {{
+                name: window.prompt("Digite su Nombre: "),
+                phone: window.prompt("Digite su Numero de Telefono: "),
+                email: window.prompt("Digite su Correo Electronico: ")
+            }     
+        
+            contacts.push(NewContact);
+        
+            let last = contacts.length - 1;
+        
+            console.log(`${{contacts[0].name} / ${{contacts[0].phone} / ${{contacts[0].email}`);
+            console.log(`${{contacts[last].name} / ${{contacts[last].phone} / ${{contacts[last].email}`);
+        </pre>
+    </div>
+    <div class="card" id="c3">
+        <header>
+            <h1>LAB 4</h1>
+            <i class="fa-brands fa-js"></i>
+        </header>
+        <pre>let contacts = [
+            {{
+            name: "Maxwell Wright",
+            phone: "(0191) 719 6495",
+            email: "Curabitur.egestas.nunc@nonummyac.co.uk"
+            }, {{
+            name: "Raja Villarreal",
+            phone: "0866 398 2895",
+            email: "posuere.vulputate@sed.com"
+            }, {{
+            name: "Helen Richards",
+            phone: "0800 1111",
+            email: "libero@convallis.edu"
+            }
+        ];
+        
+        let op = window.prompt("1. Mostar el primer contacto \n2. Mostar el ultimo contacto \n3. Agregar un nuevo contaco","elije una opcion:");
+        switch(op){{
+            case "1":
+                console.log(`${{contacts[0].name} / ${{contacts[0].phone} / ${{contacts[0].email}`);
+            break;
+            case "2":
+                console.log(`${{contacts[(contacts.length)-1].name} / ${{contacts[(contacts.length)-1].phone} / ${{contacts[(contacts.length)-1].email}`);
+            break;
+            case '3':
+                let NewContact = {{
+                    name: window.prompt("Digite su Nombre: "),
+                    phone: window.prompt("Digite su Numero de Telefono: "),
+                    email: window.prompt("Digite su Correo Electronico: ")
+                }
+                if (NewContact.name == "" || NewContact.phone == "" || NewContact.email == "") {{
+                    alert("No se agrego por un dato vacio")
+                } else {{
+                    alert("Se agrego con exito!");
+                    contacts.push(NewContact);
+                }
+            break;
+            default:
+                alert("No existe esa opcion")
+        }
+        </pre>
+        
+    </div>
+    <div class="card" id="c4">
+        <header>
+            <h1>LAB 5</h1>
+            <i class="fa-brands fa-js"></i>
+        </header>
+        <pre>let contacts = [
+            {{
+            name: "Maxwell Wright",
+            phone: "(0191) 719 6495",
+            email: "Curabitur.egestas.nunc@nonummyac.co.uk"
+            }, {{
+            name: "Raja Villarreal",
+            phone: "0866 398 2895",
+            email: "posuere.vulputate@sed.com"
+            }, {{
+            name: "Helen Richards",
+            phone: "0800 1111",
+            email: "libero@convallis.edu"
+            }
+        ];
+        
+        let op;
+        do {{
+            op = window.prompt("1. Mostar el primer contacto \n2. Mostar el ultimo contacto \n3. Mostrar todos los contactos  \n4. Agragar un nuevo contacto \n5. Salir del programa","elije una opcion:");
+            switch(op){{
+                case "1":
+                    console.log(`${{contacts[0].name} / ${{contacts[0].phone} / ${{contacts[0].email}`);
+                break;
+                case "2":
+                    console.log(`${{contacts[(contacts.length)-1].name} / ${{contacts[(contacts.length)-1].phone} / ${{contacts[(contacts.length)-1].email}`);
+                break;
+                case "3":
+                    for (let i = 0; i < contacts.length; i++) {{
+                        console.log(`${{contacts[i].name} / ${{contacts[i].phone} / ${{contacts[i].email}`);        
+                    }
+                break;
+                case "4":
+                    let NewContact = {{
+                        name: window.prompt("Digite su Nombre: "),
+                        phone: window.prompt("Digite su Numero de Telefono: "),
+                        email: window.prompt("Digite su Correo Electronico: ")
+                    }
+                    if (NewContact.name == "" || NewContact.phone == "" || NewContact.email == "") {{
+                        alert("No se agrego por un dato vacio");
+                    } else {{
+                        contacts.push(NewContact);
+                        alert("Se agrego con exito!");
+                    }
+                break;
+                case "5":
+                    alert("Too mal ^^");
+                break;
+                default:
+                    alert("No existe esa opcion")
+            }
+        } while(op != 5);</pre>
+    </div>
+    <div class="card" id="c5">
+        <header>
+            <h1>LAB 6</h1>
+            <i class="fa-brands fa-js"></i>
+        </header>
+        <pre>let contacts = [
+            {{
+            name: "Maxwell Wright",
+            phone: "(0191) 719 6495",
+            email: "Curabitur.egestas.nunc@nonummyac.co.uk"
+            }, {{
+            name: "Raja Villarreal",
+            phone: "0866 398 2895",
+            email: "posuere.vulputate@sed.com"
+            }, {{
+            name: "Helen Richards",
+            phone: "0800 1111",
+            email: "libero@convallis.edu"
+            }
+        ];
+        
+        let op;
+        do {{
+            op = window.prompt("1. Mostar el primer contacto \n2. Mostar el ultimo contacto \n3. Mostrar todos los contactos  \n4. Agragar un nuevo contacto \n5. Salir del programa","elije una opcion:");
+            switch(op){{
+                case "1":
+                    showContact(contacts,0);
+                break;
+                case "2":
+                    showContact(contacts,(contacts.length)-1);
+                break;
+                case "3":
+                    showAllContacts(contacts);
+                break;
+                case "4":
+                    let nam = window.prompt("Digite su Nombre: ");
+                    let phone = window.prompt("Digite su Numero de Telefono: ");
+                    let email = window.prompt("Digite su Correo Electronico: ");
+                    addNewContacts(contacts,nam, phone,email);
+                break;
+                case "5":
+                    alert("Chausito ^^");
+                break;
+                default:
+                    alert("No existe esa opcion")
+            }
+        } while(op != 5);
+        
+        function showContact(lisCont, numInd) {{
+            if (lisCont instanceof Array && lisCont[numInd]) {{
+                console.log(`${{lisCont[numInd].name} / ${{lisCont[numInd].phone} / ${{lisCont[numInd].email}`);
+            }
+        }
+        
+        function showAllContacts(lisCont) {{
+            if (lisCont instanceof Array) {{
+                for (let i = 0; i < lisCont.length; i++) {{
+                    console.log(`${{lisCont[i].name} / ${{lisCont[i].phone} / ${{lisCont[i].email}`);        
+                }
+            }
+        }
+        
+        function addNewContacts(lisCont, nom, cell, corrElec ) {{
+            if (contacts instanceof Array && nom && cell && corrElec) {{
+                lisCont.push({{
+                    name: nom,
+                    phone: cell,
+                    email: corrElec
+                });
+                alert("Se agrego con exito!");
+            }
+        }</pre>
+    </div>
+    <div class="card" id="c6">
+        <header>
+            <h1>LAB 7</h1>
+            <i class="fa-brands fa-js"></i>
+        </header>
+        <pre>let contacts = [
+            {{
+            name: "Maxwell Wright",
+            phone: "(0191) 719 6495",
+            email: "Curabitur.egestas.nunc@nonummyac.co.uk"
+            }, {{
+            name: "Raja Villarreal",
+            phone: "0866 398 2895",
+            email: "posuere.vulputate@sed.com"
+            }, {{
+            name: "Helen Richards",
+            phone: "0800 1111",
+            email: "libero@convallis.edu"
+            }
+        ];
+        
+        let op;
+        do {{
+            op = window.prompt("1. Mostar el primer contacto \n2. Mostar el ultimo contacto \n3. Mostrar todos los contactos  \n4. Agragar un nuevo contacto \n5. Clasificacion \n6. Salir del programa","elije una opcion:");
+            switch(op){{
+                case "1":
+                    showContact(contacts,0);
+                break;
+                case "2":
+                    showContact(contacts,(contacts.length)-1);
+                break;
+                case "3":
+                    showAllContacts(contacts);
+                break;
+                case "4":
+                    let nam = window.prompt("Digite su Nombre: ");
+                    let phone = window.prompt("Digite su Numero de Telefono: ");
+                    let email = window.prompt("Digite su Correo Electronico: ");
+                    addNewContacts(contacts,nam, phone,email);
+                break;
+                case "5":
+                    let orde = window.prompt("Digite como quiere ordenar: \n1. Nombre \n2. Telefono \n3. Correo Electronico ");
+                    sortContacts(contacts,orde);
+                break;
+                case "6":
+                    alert("Chausito ^^");
+                break;
+                default:
+                    alert("No existe esa opcion")
+            }
+        } while(op != 6);
+        
+        function showContact(lisCont, numInd) {{
+            if (lisCont instanceof Array && lisCont[numInd]) {{
+                console.log(`${{lisCont[numInd].name} / ${{lisCont[numInd].phone} / ${{lisCont[numInd].email}`);
+            }
+        }
+        
+        function showAllContacts(lisCont) {{
+            if (lisCont instanceof Array) {{
+                for (let i = 0; i < lisCont.length; i++) {{
+                    console.log(`${{lisCont[i].name} / ${{lisCont[i].phone} / ${{lisCont[i].email}`);        
+                }
+            }
+        }
+        
+        function addNewContacts(lisCont, nom, cell, corrElec ) {{
+            if (contacts instanceof Array && nom && cell && corrElec) {{
+                lisCont.push({{
+                    name: nom,
+                    phone: cell,
+                    email: corrElec
+                });
+                alert("Se agrego con exito!");
+            }
+        }
+        
+        function sortContacts(contacts, orde) {{
+            if (contacts instanceof Array) {{
+                switch (orde) {{
+                    case "1":
+                        contacts.sort((a, b) => a.name.localeCompare(b.name));
+                    break;
+                    case "2":
+                        contacts.sort((a, b) => a.phone.localeCompare(b.phone));
+                    break;
+                    case "3":
+                        contacts.sort((a, b) => a.email.localeCompare(b.email));
+                    break;
+                    default:
+                        console.log("Opción no válida");
+                    return;
+                }
+                console.log("Lista ordenada:");
+                for (const contact of contacts) {{
+                    console.log(`${{contact.name} / ${{contact.phone} / ${{contact.email}`);
+                }
+            }
+        }</pre>
+    </div>
+
+    <div class="navegador">
+        <button onclick="mostrar(0)" class="selected">LAB 1</button>
+        <button onclick="mostrar(1)">LAB 2</button>
+        <button onclick="mostrar(2)">LAB 3</button>
+        <button onclick="mostrar(3)">LAB 4</button>
+        <button onclick="mostrar(4)">LAB 5</button>
+        <button onclick="mostrar(5)">LAB 6</button>
+        <button onclick="mostrar(6)">LAB 7</button>
+</div>
+<script src="../assets/js/parcial1.js"></script>
+
+

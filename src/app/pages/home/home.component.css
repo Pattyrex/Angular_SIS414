@@ -1,0 +1,151 @@
+@import url('https://fonts.googleapis.com/css2?family=Martian+Mono:wght@100;300;400;500;600;700;800&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Martian Mono";
+    
+
+}
+body{
+    background: url("/assets/images/fondo_1parcial.jpg");
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    max-height: 100% !important;
+    color: #3d3d3d;
+    width: 100%;
+    height: 100%;
+    position: relative;
+    padding: 40px;
+    
+}
+section{
+    display: flex;
+    height: auto;
+    width: 300px;
+    color: #fff;
+    background-color: #940253;
+    align-items: center;
+    align-content: center;
+    padding: 15px;
+    flex-direction: column;
+    
+}
+a{
+    color: #fff;
+    text-decoration: none;   
+}
+a:hover {
+    color: rgba(11, 245, 175, 0.565);
+}
+.cab{
+    display: flex;
+    align-items: center;
+    align-content: center;
+  
+}
+.contenedor-cards{
+    background-color: rgba(255,255,255,.5);
+    border: 2px solid #000;
+    width: 145vh;
+    height: 550px;
+    padding-left: 50px;
+    position: relative;
+
+}
+.card{
+    position:absolute;
+    background-color: #fff;
+    border-radius:20px;
+    width: 125vh;
+    height: 400px;
+    top: 45px;
+    left: 15px;
+    padding: 20px;
+    text-align: center; 
+    overflow-x: visible;
+    overflow-y: scroll;
+
+}
+header{
+    border-bottom: 1px solid #100808;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;  
+}
+header i{
+    font-size: 30px;
+}
+.card h1{
+    margin-bottom: 10px;
+}
+.card p{
+    text-align: left;
+    line-height: 24px;
+    margin-bottom: 18px;
+    
+}
+.card pre{
+    text-align: left;
+    line-height: 24px;
+    margin-bottom: 18px;
+    
+}
+.aparecer{
+    position: relative;
+    animation: .5s aparecer forwards linear;
+    animation-delay: .5s;
+}
+@keyframes aparecer {
+    0%{
+        opacity: 0;
+        transform:  scale(.7);
+    }
+    100%{
+        opacity: 1;
+        transform:  scale(1);
+    }
+}
+.desaparecer{
+    position: absolute;
+    animation: .5s desaparecer forwards linear;
+}
+@keyframes desaparecer {
+    0%{
+        opacity: 1;
+        transform:  scale(1);
+    }
+    100%{
+        opacity: 0;
+        transform:  scale(0.7);
+    }
+}
+button{
+    display:inline-block ;
+    width: 120px;
+    padding: 10px;
+    border: 2px solid #3d3d3d;
+    cursor: pointer;
+}
+
+.selected{
+    background-color: #681649;
+    color: #fff;
+}
+.navegador{
+    position: absolute;
+    padding-top: 10px;
+    left: 1px;
+    bottom: 30px;
+    text-align: center;
+    width: 100%;
+}
+button:hover{
+    background: #940253;
+}
+#c0,#c1,#c2,#c3,#c4,#c5,#c6,#c7{
+    opacity: 0;
+}
